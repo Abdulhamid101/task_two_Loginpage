@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eef5ff;
+}
+
+.container_flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  width: 60%;
+  height: 500px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+}
+
+/* .container_content{
+    height: 600px;
+} */
+
+.container_left {
+  float: left;
+  width: 30%;
+  height: 450px;
+  background-image: url(images/bg-sidebar-desktop.svg);
+  background-size: cover;
+  border-radius: 10px;
+  padding: 2.5rem;
+  color: white;
+  /* line-height: 30px; */
+  /* margin-left: .5rem; */
+}
+.container_left small {
+  color: grey;
+}
+
+.container_left_items {
+  display: flex;
+  gap: 1rem;
+  /* justify-content: flex-start; */
+  align-items: center;
+  line-height: 25px;
+  word-spacing: 5px;
+}
+.container_right {
+  font-size: 13px;
+  float: right;
+  padding: 2.5rem 2.5rem 0 0;
+  width: 60%;
+  /* height: 550px; */
+}
+
+.container_right_header {
+  color: #002152;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.container_right_p {
+  color: gray;
+}
+
+.container_right_header,
+.container_right_p {
+  line-height: 2rem;
+  /* word-spacing: .2rem; */
+}
+
+.container_right_box{
+  display: flex;
+align-items: center;
+}
+
+.container_right_box_content{
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-left: 1rem;
+  padding: 1rem;
+  font-size: 15px;
+}
+
+.container_right_box_content span{
+  font-size: 13px;
+  color: gray;
+}
+
+.container_right_box_content i{
+  /* width: 100%; */
+  font-size: 30px;
+}
+
+/* * Hide default checkbox */ */
+.switch input {
+  display: none;
+}
+
+/* The switch container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* The slider */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+/* The circle inside the slider */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When checkbox is checked */
+input:checked + .slider {
+  background-color: #0033cc;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+/* Text styling */
+.label-text {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color:#666;
+}
+
+.slider_complete{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.next_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.next_btn button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #174a8a;
+  color: white;
+  margin-top: 2rem;
+}
+
+.next_btn a{
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  /* background-color: red; */
+  color: white;
+}
+@media (max-width:765px){
+  body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,  #eef5ff, url('images/bg-sidebar-desktop.svg'));
+  }
+  .container{
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .container_left{
+    display: none;
+  }
+  .container_right{
+    
+  background-size: cover;
+  background-position: center;
+    width: 100%;
+  }
+}
