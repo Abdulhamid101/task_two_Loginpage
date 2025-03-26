@@ -171,7 +171,7 @@
   }
 
 
-  @media (max-width:768px){
+  @media (max-width:930px){
     main{
       background-image: url(images/bg-sidebar-mobile.svg);
       background-repeat: no-repeat;
